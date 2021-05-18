@@ -1,0 +1,32 @@
+@media screen and (max-width: 1000px) {
+    .nav > li:first-child{ display: block}
+    .nav > li:not(:first-child){ display: none}
+
+    .content{
+        display: block;
+    }
+
+    .leftside{
+        width: 100%;
+    }
+
+    .rightside{
+        word-break: break-all;
+        width: 100%;
+        padding: 4px;
+    }
+    thead {font-size: 14px}
+    tbody {font-size: 10px}
+
+    .flex-container {display: block}
+    .flex-item {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0 0 0 transparent;
+        margin: 0;
+        padding-bottom: 1px;
+    }
+    #portofolio{
+        margin-bottom: 0
+    }
+}
