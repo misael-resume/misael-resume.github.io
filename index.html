@@ -20,12 +20,22 @@
 </head>
 <body>
 <header>
-    <div class="logo">
-        Resume
+    <div>
+        <div class="logo">
+            Resume
+        </div>
+        <ul class="nav">
+            <li onclick="hamburgermenu()" id="navicon"></li>
+            <li onclick="scrollToElement('about')">ABOUT ME</li>
+            <li onclick="scrollToElement('skill')">SKILL</li>
+            <li onclick="scrollToElement('multidisciplinary')">MULTIDISCIPLINARY</li>
+            <li onclick="scrollToElement('portofolio')">PORTFOLIO</li>
+
+        </ul>
     </div>
 </header>
 <div class="content">
-    <div style="flex: 1;    background-color: #DADFE3;">
+    <div style="flex: 1; background-color: #DADFE3;">
         <div style="height: 100%;text-align: center;padding: 30px;">
             <div class="avatar"></div>
             <div class="font-large" style="margin-top: 20px">
@@ -34,7 +44,7 @@
 
             <div style="margin-top: 10px">
                 <div class="tag_job">
-                    Application Developer
+                    Software Developer
                 </div>
                 <div class="tag_job">
                     Visual Artist
@@ -73,6 +83,91 @@
     </div>
 
     <div class="font-dark-color bg-white" style="flex: 4;padding: 30px">
+        <div style="margin-bottom: 50px" id="about">
+            <div class="font-very-large" style="margin-bottom: 20px;font-weight: bold">ABOUT ME</div>
+
+            <div style="margin-bottom: 20px;">
+                <p class="font-middle" style="max-width: 500px;line-height: 1.6">
+                    Hi! My name is Misael. I am a Software Developer and a Digital Painter.
+                    I'm very passionate and dedicated to my work with 10 years experience as a amateur Software developer and Digital Painter, I have acquired the skills and knowledge necessary to make your project a success.
+                    I enjoy every step of the design process, from discussion and collaboration.
+                </p>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 50px" id="skill">
+            <div class="font-very-large" style="margin-bottom: 20px;font-weight: bold">SKILL</div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="skill_container">
+                    <div class="skill_label">CORELDRAW</div>
+                    <div class="progressbar"> <div style="width: 100%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">3D STUDIO MAX</div>
+                    <div class="progressbar"> <div style="width: 50%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">CLIP STUDIO PAINT</div>
+                    <div class="progressbar"> <div style="width: 20%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">ADOBE ANIMATE</div>
+                    <div class="progressbar"> <div style="width: 30%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">C#</div>
+                    <div class="progressbar"> <div style="width: 90%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">JAVA</div>
+                    <div class="progressbar"> <div style="width: 90%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">XML</div>
+                    <div class="progressbar"> <div style="width: 80%"></div> </div>
+                </div>
+
+
+                <div class="skill_container">
+                    <div class="skill_label">C++</div>
+                    <div class="progressbar"> <div style="width: 10%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">PHP</div>
+                    <div class="progressbar"> <div style="width: 85%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">HTML</div>
+                    <div class="progressbar"> <div style="width: 100%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">CSS</div>
+                    <div class="progressbar"> <div style="width: 80%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">JAVASCRIPT</div>
+                    <div class="progressbar"> <div style="width: 50%"></div> </div>
+                </div>
+
+                <div class="skill_container">
+                    <div class="skill_label">JQUERY</div>
+                    <div class="progressbar"> <div style="width: 80%"></div> </div>
+                </div>
+
+            </div>
+        </div>
+
         <div style="margin-bottom: 50px" id="multidisciplinary">
             <div class="font-very-large" style="margin-bottom: 20px;font-weight: bold">MULTIDISCIPLINARY</div>
 
@@ -137,7 +232,7 @@
             </div>
         </div>
 
-        <div id="portofolio">
+        <div style="margin-bottom: 50px" id="portofolio">
             <div class="font-very-large" style="margin-bottom: 10px;font-weight: bold">PORTFOLIO</div>
 
             <ul class="flex-container">
@@ -252,6 +347,7 @@
 
 
         </div>
+
 
 
     </div>
