@@ -19,4 +19,11 @@
     .leftpanel{
         border-radius: 0;
     }
+
+    #about > div:first-child,
+    #skill > div:first-child,
+    #multidisciplinary > div:first-child,
+    #portofolio > div:first-child{
+        text-align: center;
+    }
 }

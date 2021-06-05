@@ -229,3 +229,11 @@ td {
 
 }
 
+#about > div:first-child,
+#skill > div:first-child,
+#multidisciplinary > div:first-child,
+#portofolio > div:first-child{
+    background-color: #F39C12;
+    padding: 8px;
+    color: #ECF0F1;
+}
