@@ -55,9 +55,9 @@ function hamburgermenu(){
                 "left":"0",
                 "margin-top":distance,
                 "width":"100%",
-                "background-color": "#ECF0F1",
-                "border": "3px solid #ECF0F1",
-                "color":"#2C3E50"
+                "background-color": "#F39C12",
+                "border": "3px solid #F39C12",
+                "color":"#ECF0F1"
             })
             i++;
         });
