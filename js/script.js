@@ -88,14 +88,32 @@ function skillanim() {
             timingFunction: 'linear', //
             delay: '0s',
             direction: 'normal',
-            fillMode: 'forwards',
-            complete: function(){}
+            fillMode: 'forwards'
         });
-        num++;
 
+        num++;
     })
+    num=0;
+    $('.skill_label .lblpercent').each(function () {
+        animateValue(this, 0, pbval[num], 1000);
+        num++
+    });
 
 }
+
+function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start) +"%";
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
 function scrollToElement(el) {
     $("html, body").animate({
         scrollTop: $("#"+el).position().top - 80
