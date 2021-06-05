@@ -102,6 +102,8 @@ function skillanim() {
 }
 
 
+
+
 function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
@@ -139,9 +141,9 @@ function open_link(link){
 $(document).scroll(function () {
 
     var scrollpos = $(this).scrollTop();
-    var scrollpos2 =$("#skill").position().top - 80
 
-    if(scrollpos === scrollpos2+20)
+    if(scrollpos === ($("#skill").position().top - 80)+20)
         skillanim()
+
 
 });
