@@ -101,6 +101,7 @@ function skillanim() {
 
 }
 
+
 function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
@@ -122,6 +123,7 @@ function scrollToElement(el) {
         complete: function () {
             if(el==="skill")
                 skillanim()
+
         }
     });
 }
@@ -133,3 +135,13 @@ function ismobile(){
 function open_link(link){
     window.open(link,"_blank");
 }
+
+$(document).scroll(function () {
+
+    var scrollpos = $(this).scrollTop();
+    var scrollpos2 =$("#skill").position().top - 80
+
+    if(scrollpos === scrollpos2+20)
+        skillanim()
+
+});
