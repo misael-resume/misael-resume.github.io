@@ -22,11 +22,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\js" />
     </key>
   </component>
@@ -40,7 +41,9 @@
       <updated>1622911516166</updated>
       <workItem from="1622911528174" duration="6429000" />
       <workItem from="1622922306105" duration="7316000" />
-      <workItem from="1622938190952" duration="536000" />
+      <workItem from="1622938190952" duration="1778000" />
+      <workItem from="1622940832370" duration="20000" />
+      <workItem from="1622940865933" duration="1285000" />
     </task>
     <servers />
   </component>
