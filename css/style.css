@@ -30,6 +30,10 @@
 .bg-purple{background-color: #9a12b3}
 .bg-yellow{background-color: hsla(54, 89%, 64%,1)}
 
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
 html,body{
     font-family: roboto, serif;
     margin: 0;
@@ -39,9 +43,7 @@ html,body{
 
 body {overflow-y: scroll;-ms-overflow-style: none; overflow-x: hidden}
 body::-webkit-scrollbar { width: 0; height: 0; }
-*{
-    box-sizing: border-box;
-}
+*{ box-sizing: border-box }
 
 a{ text-decoration: none}
 
@@ -53,10 +55,7 @@ header{
     z-index: 2;
 }
 
-header > div{
-    position: relative;
-    height: 100%;
-}
+header > div{ position: relative; height: 100% }
 .logo{
     display: inline-block;
     font-family: allema,sans-serif;
@@ -94,14 +93,8 @@ header > div{
     display: inline-block;
     height: 100%;
 }
-.nav > li {
-    transition: 1.2ms;
-}
-.nav > li:hover:not(:first-child) {
-    /*background-color: #F39C12;*/
-    cursor: pointer;
-    /*color: #ECF0F1;*/
-}
+.nav > li { transition: 1.2ms }
+.nav > li:hover:not(:first-child) { cursor: pointer }
 
 table {
     border-collapse: collapse;

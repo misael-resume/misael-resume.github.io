@@ -11,6 +11,8 @@ $(document).ready(function () {
         $('#time-part').html(momentNow.format('hh:mm:ss A'));
     }, 100);
 
+
+
 })
 
 $(window).scroll(function () {

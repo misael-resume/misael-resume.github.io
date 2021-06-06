@@ -22,13 +22,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\js" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img" />
+      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -46,6 +46,7 @@
       <workItem from="1622940865933" duration="1625000" />
       <workItem from="1622967188648" duration="7220000" />
       <workItem from="1622975596973" duration="150000" />
+      <workItem from="1622994909030" duration="2038000" />
     </task>
     <servers />
   </component>
