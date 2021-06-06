@@ -119,7 +119,28 @@ td {
 
 .content{ display: flex }
 
+.cover{
+    background-color: #9a12b3;width: 100%;height: 150px;
+    background-image: url("../img/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container_avatar{
+    display: flex; flex-flow: row wrap;
+    flex-direction: row;
+    height: 100%
+}
+
+@media screen and (max-width: 1000px) {
+    .container_avatar{
+        display: block;
+    }
+}
 .avatar{
+    position: absolute;
     display: inline-block;
     background-color: #333;
     background-image: url("../img/avatar.jpg");
@@ -128,7 +149,7 @@ td {
     background-position: center;
     width: 120px;
     height: 120px;
-    border-radius: 100%;border: 10px solid #333;
+    border-radius: 100%;border: 10px solid #DADFE3;
 
 
 }
@@ -242,3 +263,4 @@ td {
     height: 100%;text-align: center;
     padding: 30px;
 }
+
