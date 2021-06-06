@@ -135,11 +135,7 @@ td {
     height: 100%
 }
 
-@media screen and (max-width: 1000px) {
-    .container_avatar{
-        display: block;
-    }
-}
+
 .avatar{
     position: absolute;
     display: inline-block;
