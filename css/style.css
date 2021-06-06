@@ -48,6 +48,7 @@ body::-webkit-scrollbar { width: 0; height: 0; }
 a{ text-decoration: none}
 
 header{
+
     background-color: #333333;
     width: 100%;
     height: 40px;
@@ -257,16 +258,11 @@ td {
 button{
     border: 0;
     color: #ECF0F1;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 8px 12px;
+    font-size: 14px;
     font-family: roboto, serif;
     cursor: pointer;
-
-
-    background: linear-gradient(145deg, #373737, #2e2e2e);
-
+    background-image: linear-gradient(0deg, #2980B9, #3498DB)
 }
-button:hover{
-    background: linear-gradient(145deg, #ffa713, #db8c10);
-
-}
+button:hover{  background: linear-gradient(0deg, #3498DB, #2980B9) }
