@@ -1,6 +1,6 @@
 @media screen and (max-width: 1000px) {
     .nav > li:first-child{ display: block}
-    .nav > li:not(:first-child){ display: none}
+    .nav > li:not(:first-child){ display: none;z-index: 4}
     .content{display: block}
     .container_avatar{display: block}
     button{width: 100%}

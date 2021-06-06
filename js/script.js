@@ -64,8 +64,8 @@ function hamburgermenu(){
                 "left":"0",
                 "margin-top":distance,
                 "width":"100%",
-                "background-color": "#F39C12",
-                "border": "3px solid #F39C12",
+                "background-color": "#333",
+                "border": "3px solid #333",
                 "color":"#ECF0F1"
             })
             i++;
