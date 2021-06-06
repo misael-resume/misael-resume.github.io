@@ -118,13 +118,29 @@ function animateValue(obj, start, end, duration) {
 }
 
 function scrollToElement(el) {
+
+    $(".nav li").each(function () {
+        //$(this).css({"background-color":"transparent","color":"#ECF0F1"})
+        $(this).css({"border-bottom":"4px solid transparent","color":"#ECF0F1"})
+    })
+    //$("#nav"+el).css({"background-color":"#F39C12","color":"#333"})
+    $("#nav"+el).css({"border-bottom":"4px solid #F39C12","color":"#F39C12"})
+
     $("html, body").animate({
         scrollTop: $("#"+el).position().top - 80
     }, {
         duration:500,
         complete: function () {
-            if(el==="skill")
-                skillanim()
+
+
+
+            switch (el) {
+                case "skill":
+
+                    skillanim()
+                    break;
+            }
+
 
         }
     });
@@ -137,13 +153,3 @@ function ismobile(){
 function open_link(link){
     window.open(link,"_blank");
 }
-
-$(document).scroll(function () {
-
-    var scrollpos = $(this).scrollTop();
-
-    if(scrollpos === ($("#skill").position().top - 80)+20)
-        skillanim()
-
-
-});

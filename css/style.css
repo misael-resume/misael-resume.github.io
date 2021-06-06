@@ -98,9 +98,9 @@ header > div{
     transition: 1.2ms;
 }
 .nav > li:hover:not(:first-child) {
-    background-color: #F39C12;
+    /*background-color: #F39C12;*/
     cursor: pointer;
-    color: #ECF0F1;
+    /*color: #ECF0F1;*/
 }
 
 table {
@@ -217,7 +217,7 @@ td {
 }
 
 .progressbar>div {
-    background-color: orange;
+    background-color: #F39C12;
     height: 10px;
     border-radius: 10px;
 
@@ -227,8 +227,8 @@ td {
 #about > div:first-child,
 #skill > div:first-child,
 #multidisciplinary > div:first-child,
-#portofolio > div:first-child{
-    background-color: #F39C12;
+#portfolio > div:first-child{
+    background-color: #333;
     padding: 8px;
     color: #ECF0F1;
 }
