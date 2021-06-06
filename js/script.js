@@ -2,6 +2,15 @@ var ishamburgermenu = false;
 
 $(document).ready(function () {
     skillanim()
+
+    $('.cover').animate({ backgroundSize: '100%' },1000);
+
+    var interval = setInterval(function() {
+        var momentNow = moment();
+        $('#date-part').html(momentNow.format('dddd')+", "+momentNow.format('DD MMMM YYYY'))
+        $('#time-part').html(momentNow.format('hh:mm:ss A'));
+    }, 100);
+
 })
 
 $(window).scroll(function () {
