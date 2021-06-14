@@ -2,39 +2,31 @@ var ishamburgermenu = false;
 
 $(document).ready(function () {
     skillanim()
-
-    $('.cover').animate({ backgroundSize: '100%' },1000);
-
-    var interval = setInterval(function() {
-        var momentNow = moment();
-        $('#date-part').html(momentNow.format('dddd')+", "+momentNow.format('DD MMMM YYYY'))
-        $('#time-part').html(momentNow.format('hh:mm:ss A'));
-    }, 100);
-
-
-
 })
 
 $(window).scroll(function () {
     var scroll = $(this).scrollTop();
     var el_header = $("header");
-    if(scroll > 0){
-        el_header.css({
-            "box-shadow":"0 0 2px rgba(0,0,0,0.5)",
-            "position":"fixed",
-            "left":"0",
-            "top":"0",
-            "width":"100%"
-        })
-    }else{
-        el_header.css({
-            "box-shadow":"0 0 2px transparent",
-            "position":"static",
-            "left":"0",
-            "top":"0",
-            "width":"100%"
-        })
+    if(ismobile()){
+        if(scroll > 0){
+            el_header.css({
+                "box-shadow":"0 0 2px rgba(0,0,0,0.5)",
+                "position":"fixed",
+                "left":"0",
+                "top":"0",
+                "width":"100%"
+            })
+        }else{
+            el_header.css({
+                "box-shadow":"0 0 2px transparent",
+                "position":"static",
+                "left":"0",
+                "top":"0",
+                "width":"100%"
+            })
+        }
     }
+
 })
 
 $(document).click(function(e) {
@@ -84,6 +76,8 @@ function arr_keyframe(num,value) {
     }]);
 }
 
+
+
 function skillanim() {
     var num=0;
     var pbval = ["100", "30", "30","20","80","80","70","20","80","100","90","50","70"];
@@ -131,11 +125,10 @@ function animateValue(obj, start, end, duration) {
 function scrollToElement(el) {
 
     $(".nav li").each(function () {
-        //$(this).css({"background-color":"transparent","color":"#ECF0F1"})
-        $(this).css({"border-bottom":"4px solid transparent","color":"#ECF0F1"})
+        $(this).css({"background":"transparent"})
     })
-    //$("#nav"+el).css({"background-color":"#F39C12","color":"#333"})
-    $("#nav"+el).css({"border-bottom":"4px solid #F39C12","color":"#F39C12"})
+    $("#nav"+el).css({"background":"#1D9CE5"})
+
 
     $("html, body").animate({
         scrollTop: $("#"+el).position().top - 80

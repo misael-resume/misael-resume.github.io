@@ -48,54 +48,46 @@ body::-webkit-scrollbar { width: 0; height: 0; }
 a{ text-decoration: none}
 
 header{
-
-    background-color: #333333;
+    position: fixed;
+    color: #fff;
     width: 100%;
     height: 40px;
-    color: #DADFE3;
     z-index: 2;
+    left: 0;top: 0;
+
+
+    background: -moz-linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* FF 3.6+ */
+    background: -ms-linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* IE10 */
+    background: -webkit-linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* Opera 11.10 */
+    background: linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* the standard */
 }
 
 header > div{ position: relative; height: 100% }
-.logo{
-    display: inline-block;
-    font-family: allema,sans-serif;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-left: 20px;
-}
-
 
 .nav{
-    float: right;
-    list-style: none;
+    text-align: center;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     height: 100%;
 }
-
 .nav > li:first-child{
-    margin-top: 9px;
-    margin-right: 9px;
     display: none;
-    background-image: url("../img/hamburger.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 25px;
-    width: 20px;
-    height: 20px;
 }
 .nav > li:not(:first-child){
+    cursor: pointer;
+    text-shadow: 0 1px 0 #000;
+    align-items: center;
+    margin: 0;
+    padding: 0 15px 0 15px;
     font-size: 12px;
     font-weight: bold;
-    padding: 14px 14px 0 14px;
-    display: inline-block;
+    display: inline-flex;
     height: 100%;
 }
-.nav > li { transition: 1.2ms }
-.nav > li:hover:not(:first-child) { cursor: pointer }
+
+
 
 table {
     border-collapse: collapse;
@@ -114,24 +106,21 @@ td {
 .content{ display: flex }
 
 .cover{
-    background-color: #F39C12;
-    width: 100%;height: 150px;
-    background-image: url("../img/cover.jpg");
-    background-size: 150%;
+    position: relative;
+    background-color: #333;
+    width: 100%;height: 100vh;
+
+    -webkit-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
+
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 
-}
-
-.container_avatar{
-    display: flex; flex-flow: row wrap;
-    flex-direction: row;
-    height: 100%
 }
 
 
 .avatar{
-    position: absolute;
     display: inline-block;
     background-color: #333;
     background-image: url("../img/avatar.jpg");
@@ -140,7 +129,7 @@ td {
     background-position: center;
     width: 120px;
     height: 120px;
-    border-radius: 100%;border: 10px solid #DADFE3;
+    border-radius: 100%;border: 10px solid #333;
 
 
 }
@@ -208,8 +197,8 @@ td {
 
 
 .skill_container{
-    width: 500px;
-    padding: 10px;
+    width: 200px;
+    padding: 8px;
 }
 
 .multidisciplinary > div{
@@ -240,9 +229,21 @@ td {
 #skill > div:first-child,
 #multidisciplinary > div:first-child,
 #portfolio > div:first-child{
-    background-color: #333;
-    padding: 8px;
-    color: #ECF0F1;
+    border-bottom:5px solid #333;
+    margin-bottom: 20px
+}
+
+
+#about > div:first-child > div,
+#skill > div:first-child > div,
+#multidisciplinary > div:first-child > div,
+#portfolio > div:first-child > div{
+    background-color:#333;
+    padding: 8px 12px;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+
 }
 
 .tag_job{
@@ -263,6 +264,47 @@ button{
     font-size: 14px;
     font-family: roboto, serif;
     cursor: pointer;
-    background-image: linear-gradient(0deg, #2980B9, #3498DB)
+    background-image: linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5)
 }
-button:hover{  background: linear-gradient(0deg, #3498DB, #2980B9) }
+button:hover{  background: linear-gradient(#1D9CE5, #2FA4E7 60%, #54B4EB) }
+
+.dot-container{
+    width: 100%;
+    text-align:center;
+    position: absolute;bottom: 0;padding: 5px 0 15px 0
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+
+}
+
+.active, .dot:hover {
+    background: -moz-linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* FF 3.6+ */
+    background: -ms-linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* IE10 */
+    background: -webkit-linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* Opera 11.10 */
+    background: linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* the standard */
+}
+
+#caption-slider,#desc-slider{
+    background-color: #333;
+    display: inline-block;
+    color: #fff;
+    border-bottom: 4px solid #1D9CE5;
+    width: auto;
+    padding: 6px 14px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    font-size: 18px;
+}

@@ -10,6 +10,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -19,14 +26,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/slider" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img\slider" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\js" />
     </key>
@@ -48,6 +57,13 @@
       <workItem from="1622975596973" duration="150000" />
       <workItem from="1622994909030" duration="2038000" />
       <workItem from="1623016329279" duration="1039000" />
+      <workItem from="1623080772028" duration="4606000" />
+      <workItem from="1623113005116" duration="526000" />
+      <workItem from="1623375984650" duration="20000" />
+      <workItem from="1623433372566" duration="7431000" />
+      <workItem from="1623611881208" duration="9869000" />
+      <workItem from="1623628986577" duration="6488000" />
+      <workItem from="1623639552782" duration="932000" />
     </task>
     <servers />
   </component>

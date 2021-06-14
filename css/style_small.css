@@ -1,6 +1,23 @@
 @media screen and (max-width: 1000px) {
-    .nav > li:first-child{ display: block}
+    .nav {float: right}
     .nav > li:not(:first-child){ display: none;z-index: 4}
+
+    .nav > li:first-child{
+        margin-top: 8px;
+        margin-right: 8px;
+        padding: 0;
+        display: block;
+        background-image: url("../img/hamburger.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        width: 20px;
+        height: 20px;
+    }
+    header{
+        position: static;
+    }
+    .cover{height: 200px}
     .content{display: block}
     .container_avatar{display: block}
     button{width: 100%}
@@ -22,7 +39,8 @@
     #about > div:first-child,
     #skill > div:first-child,
     #multidisciplinary > div:first-child,
-    #portofolio > div:first-child{
+    #portfolio > div:first-child{
         text-align: center;
     }
+    #caption-slider{font-size: 12px;top: 70%}
 }

@@ -19,39 +19,96 @@
     <script src="js/jquery.keyframes.min.js"></script>
     <script src="js/moment.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        var slideIndex = 0;
+        var timer;
+
+        $(document).ready(function () { caption_keyframe();slider() })
+        var caption = ["",
+            "2D Character Concept",
+            "2D Sprite Sheet",
+            "3D Modeling",
+            "Logo Design",
+            "App Development",];
+
+        function slider() {
+            anim()
+            timer = setTimeout(slider,9000)
+        }
+
+        function anim() {
+            if(document.hasFocus()) {
+                var dots = $(".dot")
+                var cov_slider = $(".cover");
+                var cap_slider = $("#caption-slider");
+
+                for(var i = 0;i<dots.length;i++)
+                    dots.eq(i).removeClass("active")
+
+                slideIndex++;
+                if(slideIndex > dots.length) {slideIndex=1}
+
+                dots.eq(slideIndex-1).addClass("active")
+
+                cov_slider.css("background-image","url('img/slider/"+slideIndex+".jpg')")
+                cap_slider.playKeyframe({
+                    name: 'captionslider',
+                    duration: '1s',
+                    timingFunction: 'linear', //
+                    delay: '0s',
+                    direction: 'normal',
+                    fillMode: 'forwards'
+                });
+                cap_slider.html(caption[slideIndex])
+            }
+        }
+
+        function curSlide(n) {
+            clearTimeout(timer)
+            slideIndex = n-1
+            slider()
+        }
+
+        function caption_keyframe() {
+            $.keyframe.define([{
+                name: 'captionslider',
+                'from': {'left': '40%','opacity':'00%'},
+                'to': {'left': '50%','opacity':'100%'},
+            }]);
+        }
+
+    </script>
+
 </head>
 <body>
 <header>
     <div>
-        <div class="logo">
-            Resume
-        </div>
         <ul class="nav">
             <li onclick="hamburgermenu()" id="navicon"></li>
             <li onclick="scrollToElement('about')" id="navabout">ABOUT ME</li>
             <li onclick="scrollToElement('skill')" id="navskill">SKILL</li>
             <li onclick="scrollToElement('multidisciplinary')" id="navmultidisciplinary">MULTIDISCIPLINARY</li>
             <li onclick="scrollToElement('portfolio')" id="navportfolio">PORTFOLIO</li>
-
         </ul>
     </div>
 </header>
 <div class="cover">
-    <div class="container_avatar">
-        <div style="flex: 1">
-            <div style="position: relative">
-                <div class="avatar" style="left: 50%;margin-left: -60px;margin-top: 80px">
-                    <div></div>
-                </div>
-            </div>
-
-        </div>
-        <div style="flex: 4;padding: 30px"></div>
+    <div id="caption-slider"> </div>
+    <div class="dot-container">
+        <span class="dot" onclick="curSlide(1)"></span>
+        <span class="dot" onclick="curSlide(2)"></span>
+        <span class="dot" onclick="curSlide(3)"></span>
     </div>
 </div>
 <div class="content">
     <div style="flex: 1; background-color: #DADFE3;">
         <div class="leftpanel">
+
+            <div class="avatar" >
+                <div></div>
+            </div>
+
             <div class="font-large" style="margin-top: 30px">
                 <b>Misael</b>
             </div>
@@ -98,16 +155,12 @@
     </div>
 
     <div class="font-dark-color bg-white" style="flex: 4;padding: 30px">
-        <div style="margin-bottom: 50px;display: flex;">
-            <div id="date-part" style="flex: 1"></div>
-            <div id="time-part" style="flex: 1;text-align: right"></div>
-        </div>
         <div style="margin-bottom: 50px" id="about">
-            <div class="font-large" style="margin-bottom: 20px;font-weight: bold">ABOUT ME</div>
+            <div><div>ABOUT ME</div></div>
 
             <div style="margin-bottom: 20px;">
                 <p class="font-middle" style="max-width: 500px;line-height: 1.6">
-                    Hi! My name is <b>Misael</b>. I am a <i>Software Developer</i> and a <i>Digital Painter</i>.
+                    Hi! My name is <b>Misael</b>. I am a <i>Software Developer</i> and a <i>Digital Artist</i>.
                     I'm very passionate and dedicated to my work with 10+ years experience as a amateur Software developer and Digital Painter, I have acquired the skills and knowledge necessary to make your project a success.
                     I enjoy every step of the design process, from discussion and collaboration.
                 </p>
@@ -116,7 +169,7 @@
         </div>
 
         <div style="margin-bottom: 50px" id="skill">
-            <div class="font-large" style="margin-bottom: 20px;font-weight: bold">SKILL</div>
+            <div><div>SKILL</div></div>
 
             <div class="flex-container">
                 <div class="skill_container">
@@ -189,7 +242,7 @@
         </div>
 
         <div style="margin-bottom: 50px" id="multidisciplinary">
-            <div class="font-large" style="margin-bottom: 20px;font-weight: bold">MULTIDISCIPLINARY</div>
+            <div><div>MULTIDISCIPLINARY</div></div>
 
             <div class="flex-container multidisciplinary">
                 <div style="margin-bottom: 20px;">
@@ -266,7 +319,7 @@
         </div>
 
         <div style="margin-bottom: 50px" id="portfolio">
-            <div class="font-large" style="margin-bottom: 20px;font-weight: bold">PORTFOLIO</div>
+            <div><div>PORTFOLIO</div></div>
 
             <ul class="flex-container">
 
@@ -277,7 +330,7 @@
                         </div>
                     </div>
                     <div class="label">
-                        <div class="font-large" style="font-weight: bold">Digital Painting</div>
+                        <div class="font-large" style="font-weight: bold">Digital Art</div>
                         <div class="font-middle"> Dimension : 2D, 3D </div>
                         <div class="font-middle"> Tool : 3Dsmax, Coreldraw, CSP </div>
                     </div>
