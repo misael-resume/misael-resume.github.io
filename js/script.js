@@ -125,9 +125,9 @@ function animateValue(obj, start, end, duration) {
 function scrollToElement(el) {
 
     $(".nav li").each(function () {
-        $(this).css({"background":"transparent"})
+        $(this).css({"background-color":"transparent"})
     })
-    $("#nav"+el).css({"background":"#1D9CE5"})
+    $("#nav"+el).css({"background-color":"#1D9CE5"})
 
 
     $("html, body").animate({
