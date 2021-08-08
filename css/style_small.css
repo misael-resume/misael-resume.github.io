@@ -1,4 +1,7 @@
 @media screen and (max-width: 1000px) {
+    .container{
+        width: 100%;
+    }
     .nav {float: right}
     .nav > li:not(:first-child){ display: none;z-index: 4}
 

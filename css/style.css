@@ -8,6 +8,11 @@
     src: url("../font/Allema.ttf");
 }
 
+@font-face {
+    font-family: "eightbitdragon";
+    src: url("../font/EightBitDragon.ttf");
+}
+
 .font-very-small{font-size: 10px}
 .font-small{font-size: 12px}
 .font-middle{font-size: 14px}
@@ -46,7 +51,10 @@ body::-webkit-scrollbar { width: 0; height: 0; }
 *{ box-sizing: border-box }
 
 a{ text-decoration: none}
-
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
 header{
     position: fixed;
     color: #fff;
