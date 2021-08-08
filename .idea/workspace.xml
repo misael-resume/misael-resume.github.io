@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -32,12 +32,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/slider" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gallery/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\gallery\img" />
+      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\font" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img\slider" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\js" />
@@ -69,6 +72,17 @@
       <workItem from="1623639552782" duration="932000" />
       <workItem from="1623701522600" duration="858000" />
       <workItem from="1623988148527" duration="2720000" />
+      <workItem from="1625705101348" duration="299000" />
+      <workItem from="1625705417555" duration="321000" />
+      <workItem from="1625705799412" duration="110000" />
+      <workItem from="1625705947539" duration="144000" />
+      <workItem from="1625706107107" duration="3000" />
+      <workItem from="1625706234791" duration="664000" />
+      <workItem from="1625707826572" duration="4883000" />
+      <workItem from="1625713000883" duration="1553000" />
+      <workItem from="1625724762554" duration="11685000" />
+      <workItem from="1625779408532" duration="1403000" />
+      <workItem from="1625816495088" duration="28000" />
     </task>
     <servers />
   </component>
