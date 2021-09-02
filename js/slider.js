@@ -15,7 +15,7 @@ function slider() {
 }
 
 function anim() {
-    if(document.hasFocus()) {
+    //if(document.hasFocus()) {
         clearTimeout(timer)
 
         var dots = $(".dot")
@@ -51,7 +51,7 @@ function anim() {
         });
         cap_slider.html(caption[slideIndex])
 
-    }
+   // }
 }
 
 function curSlide(n) {
