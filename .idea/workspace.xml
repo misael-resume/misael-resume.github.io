@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18e6e56f-f22e-4a9c-856f-483855541cf9" name="Default Changelist" comment="" />
+    <list default="true" id="18e6e56f-f22e-4a9c-856f-483855541cf9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +26,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1tXNRLwRvdAukJNZFOykL69Gd4A" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,18 +38,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gallery/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/thumbnail" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img\thumbnail" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\gallery\img" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\font" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img\slider" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img" />
-      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,6 +89,8 @@
       <workItem from="1625724762554" duration="11685000" />
       <workItem from="1625779408532" duration="1403000" />
       <workItem from="1625816495088" duration="28000" />
+      <workItem from="1631012721523" duration="445000" />
+      <workItem from="1631184305946" duration="54000" />
     </task>
     <servers />
   </component>
