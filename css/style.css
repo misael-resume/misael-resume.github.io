@@ -3,15 +3,7 @@
     src: url("../font/Roboto.ttf");
 }
 
-@font-face {
-    font-family: "allema";
-    src: url("../font/Allema.ttf");
-}
 
-@font-face {
-    font-family: "eightbitdragon";
-    src: url("../font/EightBitDragon.ttf");
-}
 
 .font-very-small{font-size: 10px}
 .font-small{font-size: 12px}
@@ -48,6 +40,7 @@ html,body{
 
 body {overflow-y: scroll;-ms-overflow-style: none; overflow-x: hidden}
 body::-webkit-scrollbar { width: 0; height: 0; }
+
 *{ box-sizing: border-box }
 
 a{ text-decoration: none}
@@ -114,13 +107,72 @@ td {
 .content{ display: flex }
 
 .cover{
+    background-image: url("../img/cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    background-color: #333;
     width: 100%;height: 100vh;
 
+}
+
+.img-slider-container{
+    display: flex;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 60%;height: 60vh;
+    position: absolute;
+}
+.img-slider{
+    flex: 3;
+    margin-right: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.img-slider-small{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.img-slider-small > div{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-slider-small > div:first-child{
+    height: 100%;
+    background-color: #F39C12;
+    color: #ECF0F1;
+}
+
+.img-slider-small div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#dayname{
+    font-size: 40px;
+    font-weight: bold;
+}
+#datename{
+
+    font-size: 20px;
+    font-family: monospace,eightbitdragon;
+}
+
+.img-slider-small > .line-margin{
+    height: 20px;
+}
+.img-slider-small > div:last-child{
+    height: 100%;
+    background-color: #F39C12;
+    padding: 10px;
+    text-align: center;
+    color: #ECF0F1;
 }
 
 .avatar{

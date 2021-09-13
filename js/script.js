@@ -1,10 +1,41 @@
 var ishamburgermenu = false;
 
 $(document).ready(function () {
-    skillanim()
+    var today = new Date();
+    var date = today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear()
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var dayName = days[today.getDay()];
+
+    $("#dayname").html(dayName);
+    $("#datename").html(date);
+
+    var waypoints = []
+    $('.waypoint').each(function(index, value) {
+
+        var waypoint = new Waypoint({
+            element: value,
+            handler: function() {
+                if(this.element.id==="skill")
+                    skillanim()
+
+                if(!ismobile()){
+                    $(".nav li").each(function () {
+                        $(this).css({"background-color":"transparent"})
+                    })
+                    $("#nav"+this.element.id).css({"background-color":"#1D9CE5"})
+                }
+
+            },
+            offset: '50%'
+        });
+        waypoints.push(waypoint)
+    });
 })
 
+
+
 $(window).scroll(function () {
+
     var scroll = $(this).scrollTop();
     var el_header = $("header");
     if(ismobile()){
@@ -24,6 +55,13 @@ $(window).scroll(function () {
                 "top":"0",
                 "width":"100%"
             })
+        }
+    }else{
+        if(scroll === 0){
+            $(".nav li").each(function () {
+                $(this).css({"background-color":"transparent"})
+            })
+            $("#navhome").css({"background-color":"#1D9CE5"})
         }
     }
 
@@ -141,7 +179,7 @@ function scrollToElement(el) {
             switch (el) {
                 case "skill":
 
-                    skillanim()
+                  //  skillanim()
                     break;
             }
 

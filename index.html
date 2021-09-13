@@ -17,14 +17,20 @@
     <link rel="stylesheet" type="text/css" href="css/style_small.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.keyframes.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
+
 </head>
 <body>
 <header>
     <div>
+        <div style="position: absolute;display: inline-block;padding-top: 10px;padding-left: 10px">
+            Resume
+        </div>
         <ul class="nav">
             <li onclick="hamburgermenu()" id="navicon"></li>
+            <li onclick="scrollToElement('home')" id="navhome">HOME</li>
             <li onclick="scrollToElement('about')" id="navabout">ABOUT ME</li>
             <li onclick="scrollToElement('skill')" id="navskill">SKILL</li>
             <li onclick="scrollToElement('multidisciplinary')" id="navmultidisciplinary">MULTIDISCIPLINARY</li>
@@ -32,12 +38,24 @@
         </ul>
     </div>
 </header>
-<div class="cover">
+<div class="cover waypoint" id="home">
+    <div class="img-slider-container" style="display: flex">
+        <div class="img-slider"></div>
+        <div class="img-slider-small">
+            <div>
+                <div id="dayname"></div>
+                <div id="datename"></div>
+            </div>
+            <div class="line-margin"></div>
+            <div> Collaborate with me, Let's make something cool with Art and Software. </div>
+        </div>
+    </div>
     <div id="caption-slider"> </div>
     <div class="dot-container">
         <span class="dot" onclick="curSlide(1)"></span>
         <span class="dot" onclick="curSlide(2)"></span>
         <span class="dot" onclick="curSlide(3)"></span>
+        <span class="dot" onclick="curSlide(4)"></span>
     </div>
 </div>
 <div class="content">
@@ -94,7 +112,7 @@
     </div>
 
     <div class="font-dark-color bg-white" style="flex: 4;padding: 30px">
-        <div style="margin-bottom: 50px" id="about">
+        <div style="margin-bottom: 50px" class="waypoint" id="about">
             <div><div>ABOUT ME</div></div>
 
             <div style="margin-bottom: 20px;">
@@ -107,84 +125,84 @@
 
         </div>
 
-        <div style="margin-bottom: 50px" id="skill">
+        <div style="margin-bottom: 50px" class="waypoint" id="skill">
             <div><div>SKILL</div></div>
 
             <div class="flex-container">
                 <div class="skill_container">
                     <div class="skill_label">CORELDRAW <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 100%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">CLIP STUDIO PAINT  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 60%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">3D STUDIO MAX  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 50%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">3D COAT  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 10%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">ADOBE ANIMATE  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 20%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">XML  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 80%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">HTML  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 100%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">CSS  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 80%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">C#  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 90%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">JAVA  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 90%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">C++  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 10%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">PHP  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 85%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">JAVASCRIPT  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 50%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
                 <div class="skill_container">
                     <div class="skill_label">JQUERY  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 80%"></div> </div>
+                    <div class="progressbar"> <div style="width: 0%"></div> </div>
                 </div>
 
             </div>
         </div>
 
-        <div style="margin-bottom: 50px" id="multidisciplinary">
+        <div style="margin-bottom: 50px" class="waypoint" id="multidisciplinary">
             <div><div>MULTIDISCIPLINARY</div></div>
 
             <div class="flex-container multidisciplinary">
@@ -261,7 +279,7 @@
 
         </div>
 
-        <div style="margin-bottom: 50px" id="portfolio">
+        <div style="margin-bottom: 50px" class="waypoint" id="portfolio">
             <div><div>PORTFOLIO</div></div>
 
             <ul class="flex-container">

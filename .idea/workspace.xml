@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="18e6e56f-f22e-4a9c-856f-483855541cf9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style_small.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_small.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Allema.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slider/3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/slider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +46,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/thumbnail" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img" />
+      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\js" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img\thumbnail" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\gallery\img" />
       <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\font" />
-      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img\slider" />
-      <recent name="C:\Users\Misael\Documents\GitHub\misaeljager.github.io\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -91,6 +99,8 @@
       <workItem from="1625816495088" duration="28000" />
       <workItem from="1631012721523" duration="445000" />
       <workItem from="1631184305946" duration="54000" />
+      <workItem from="1631520209789" duration="8279000" />
+      <workItem from="1631529833476" duration="4937000" />
     </task>
     <servers />
   </component>

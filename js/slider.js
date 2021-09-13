@@ -1,25 +1,29 @@
 var slideIndex = 0;
 var timer;
 
-$(document).ready(function () { caption_keyframe();cover_keyframe();slider() })
+$(document).ready(function () {
+
+    caption_keyframe();cover_keyframe();slider()
+})
 var caption = ["",
-    "2D Character Concept",
     "2D Sprite Sheet",
+    "Vector Art",
     "3D Modeling",
-    "Logo Design",
-    "App Development",];
+    "2D Character Concept",];
 
 function slider() {
     anim()
-    timer = setTimeout(slider,9000)
+    timer = setTimeout(slider,5000)
 }
 
+
 function anim() {
-    //if(document.hasFocus()) {
+    if(!document.hidden) {
         clearTimeout(timer)
 
         var dots = $(".dot")
-        var cov_slider = $(".cover");
+        var cov_slider = $(".img-slider");
+
         var cap_slider = $("#caption-slider");
 
         for(var i = 0;i<dots.length;i++)
@@ -32,15 +36,13 @@ function anim() {
 
         cov_slider.playKeyframe({
             name: 'coverslider',
-            duration: '3s',
+            duration: '2.5s',
             timingFunction: 'linear',
             delay: '0s',
             direction: 'normal',
             fillMode: 'forwards'
         });
-        cov_slider.css("background-image","url('img/slider/"+slideIndex+".jpg')")
-
-
+        cov_slider.css("background-image","url('img/slider/"+slideIndex+".png')")
         cap_slider.playKeyframe({
             name: 'captionslider',
             duration: '1s',
@@ -51,7 +53,7 @@ function anim() {
         });
         cap_slider.html(caption[slideIndex])
 
-   // }
+    }
 }
 
 function curSlide(n) {
@@ -63,15 +65,16 @@ function curSlide(n) {
 function caption_keyframe() {
     $.keyframe.define([{
         name: 'captionslider',
-        'from': {'left': '40%','opacity':'0%'},
-        'to': {'left': '50%','opacity':'100%'},
+        'from': {'opacity':'0%'},
+        'to': {'opacity':'100%'},
     }]);
 }
 
 function cover_keyframe() {
     $.keyframe.define([{
         name: 'coverslider',
-        'from': {' background-size': '100% auto','opacity':'0%'},
-        'to': {' background-size': '110% auto','opacity':'100%'},
+        'from': {'opacity':'0%'},
+        'to': {'opacity':'100%'},
     }]);
 }
+

@@ -21,6 +21,13 @@
         position: static;
     }
     .cover{height: 200px}
+    .img-slider-container{width: 100%;height: 200px}
+    .img-slider{margin-right: 0}
+
+
+    #dayname{font-size: 20px}
+    #datename{font-size: 10px}
+
     .content{display: block}
     .container_avatar{display: block}
     button{width: 100%}
