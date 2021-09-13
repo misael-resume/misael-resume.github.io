@@ -118,7 +118,7 @@ function arr_keyframe(num,value) {
 
 function skillanim() {
     var num=0;
-    var pbval = ["100", "60", "60","10","20","70","100","100","80","80","20","80","80","80"];
+    var pbval = ["100", "60", "60","10","20","70","80","80","80","80","20","80","75","80"];
     var el = $('div.progressbar div');
     el.each(function(){
         $(this).css({"width":"0"})

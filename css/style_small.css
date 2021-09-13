@@ -28,8 +28,10 @@
     .img-slider{margin-right: 0}
 
 
-    #dayname{font-size: 20px}
+    #dayname{font-size: 15px}
     #datename{font-size: 10px}
+    .line-margin{background-color: #333}
+    .img-slider-small > div:last-child{font-size: 10px}
 
     .content{display: block}
     .container_avatar{display: block}

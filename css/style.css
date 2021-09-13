@@ -129,6 +129,7 @@ td {
     position: absolute;
 }
 .img-slider{
+    position: relative;
     flex: 3;
     margin-right: 10px;
     background-size: cover;
@@ -327,8 +328,8 @@ button:hover{  background: linear-gradient(#1D9CE5, #2FA4E7 60%, #54B4EB) }
 
 .dot-container{
     width: 100%;
-    text-align:center;
-    position: absolute;bottom: 0;padding: 5px 0 15px 0
+    text-align: right;
+    padding: 10px 15px 15px 15px
 }
 .dot {
     cursor: pointer;
@@ -351,17 +352,16 @@ button:hover{  background: linear-gradient(#1D9CE5, #2FA4E7 60%, #54B4EB) }
     background: linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5); /* the standard */
 }
 
-#caption-slider,#desc-slider{
-    background-color: #333;
-    display: inline-block;
+
+#caption-slider{
+    background-color: rgba(0, 0, 0, 0.5);
+
     color: #fff;
     border-bottom: 4px solid #1D9CE5;
-    width: auto;
-    padding: 6px 14px;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    width: 100%;
+
     position: absolute;
-    top: 88%;
-    left: 50%;
+    bottom: 0;
+    padding: 6px;
     font-size: 18px;
 }

@@ -65,8 +65,8 @@ function curSlide(n) {
 function caption_keyframe() {
     $.keyframe.define([{
         name: 'captionslider',
-        'from': {'left':'30%','opacity':'0%'},
-        'to': {'left':'50%','opacity':'100%'},
+        'from': {'opacity':'0%'},
+        'to': {'opacity':'100%'},
     }]);
 }
 
