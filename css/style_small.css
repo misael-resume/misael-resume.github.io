@@ -1,4 +1,7 @@
 @media screen and (max-width: 1000px) {
+    .logo{
+        font-weight: bold; position: absolute;display: inline-block;padding-top: 10px;padding-left: 10px
+    }
     .container{
         width: 100%;
     }
