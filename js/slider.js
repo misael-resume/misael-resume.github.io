@@ -7,7 +7,7 @@ $(document).ready(function () {
 })
 var caption = ["",
     "2D Sprite Sheet",
-    "Vector Art",
+    "2.5D Game Development",
     "3D Modeling",
     "2D Character Concept",];
 
