@@ -14,70 +14,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Misael's Resume</title>
+
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style_small.css">
+    <link rel="stylesheet" type="text/css" href="css/bubble.css">
+  
     <script src="js/jquery.js"></script>
     <script src="js/jquery.keyframes.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/slider.js"></script>
+   
 
+    <style>
+        #loading {
+            position: fixed;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            z-index: 99;
+        }
+
+        .typewrite{
+            font-size: 25px;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            setBubble("loading")
+            setBubble("header")
+        })
+    </script>
 </head>
 <body>
-<header>
+
+     
+<div id="loading" class="bg-dark font-white-color">
+    <div class="typewrite">
+        W E L C O M E
+        <div class="font-very-small">PLEASE WAIT...</div>
+    </div>
+</div>
+
+<header id="header">
     <div>
         <div class="logo">
             Resume
         </div>
-        <ul class="nav">
+        <nav>
             <li onclick="hamburgermenu()" id="navicon"></li>
-            <li onclick="scrollToElement('home')" id="navhome">HOME</li>
             <li onclick="scrollToElement('about')" id="navabout">ABOUT ME</li>
             <li onclick="scrollToElement('skill')" id="navskill">SKILL</li>
             <li onclick="scrollToElement('multidisciplinary')" id="navmultidisciplinary">MULTIDISCIPLINARY</li>
             <li onclick="scrollToElement('portfolio')" id="navportfolio">PORTFOLIO</li>
-        </ul>
+        </nav>
     </div>
 </header>
-<div class="cover waypoint" id="home">
-    <div class="img-slider-container" style="display: flex">
-        <div class="img-slider">
-            <div class="dot-container">
-                <span class="dot" onclick="curSlide(1)"></span>
-                <span class="dot" onclick="curSlide(2)"></span>
-                <span class="dot" onclick="curSlide(3)"></span>
-                <span class="dot" onclick="curSlide(4)"></span>
-            </div>
-            <div id="caption-slider"> </div>
-        </div>
-        <div class="img-slider-small">
-            <div>
-                <div id="dayname"></div>
-                <div id="datename"></div>
-            </div>
-            <div class="line-margin"></div>
-            <div> Collaborate with me, Let's make something cool with Art and Software. </div>
-        </div>
-    </div>
-</div>
+
 <div class="content">
     <div style="flex: 1; background-color: #DADFE3;">
-        <div class="leftpanel">
+        <div class="leftpanel" >
 
             <div class="avatar" >
                 <div></div>
             </div>
 
+            
             <div class="font-large" style="margin-top: 30px">
                 <b>Misael</b>
             </div>
 
             <div style="margin-top: 6px">
-                <div class="tag_job">
+                <div class="tag_job bg-red font-white-color" >
                     Software Developer
                 </div>
-                <div class="tag_job">
+                <div class="tag_job bg-purple font-white-color" >
                     Digital Artist
                 </div>
             </div>
@@ -118,7 +147,7 @@
             <div style="margin-bottom: 20px;">
                 <p class="font-middle" style="max-width: 500px;line-height: 1.6">
                     Hi! My name is <b>Misael</b>. I am a <i>Software Developer</i> and a <i>Digital Artist</i>.
-                    I'm very passionate and dedicated to my work with 10+ years experience as a amateur Software developer and Digital Artist, I have acquired the skills and knowledge necessary to make your project a success.
+                    I'm very passionate and dedicated to my work with 10+ years experience, I have acquired the skills and knowledge necessary to make your project a success.
                     I enjoy every step of the design process, from discussion and collaboration.
                 </p>
             </div>
@@ -130,76 +159,137 @@
 
             <div class="flex-container">
                 <div class="skill_container">
-                    <div class="skill_label">CORELDRAW <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/coreldraw.png')"></div>
+                    <div>
+                        <div class="skill_label">CORELDRAW <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">CLIP STUDIO PAINT  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/csp.png')"></div>
+                    <div>
+                        <div class="skill_label">CLIP STUDIO PAINT  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">3D STUDIO MAX  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/3dmax.png')"></div>
+                    <div>
+                        <div class="skill_label">3D STUDIO MAX  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">3D COAT  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/unity.png')"></div>
+                    <div>
+                        <div class="skill_label">UNITY GAME ENGINE  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">ADOBE ANIMATE  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/an.png')"></div>
+                    <div>
+                        <div class="skill_label">ADOBE ANIMATE  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
+                </div>
+                
+                <div class="skill_container">
+                    <div style="background-image: url('img/csharp.png')"></div>
+                    <div>
+                        <div class="skill_label">C#  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">XML  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/java.png')"></div>
+                    <div>
+                        <div class="skill_label">JAVA  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">Unity API  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/php.png')"></div>
+                    <div>
+                        <div class="skill_label">PHP  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">.NET Framework <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/laravel.png')"></div>
+                    <div>
+                        <div class="skill_label">LARAVEL  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">C#  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/js.png')"></div>
+                    <div>
+                        <div class="skill_label">JAVASCRIPT   <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
+                </div>
+
+                
+                <div class="skill_container">
+                    <div style="background-image: url('img/nodejs.png')"></div>
+                    <div>
+                        <div class="skill_label">NODE.JS  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">JAVA  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/jquery.png')"></div>
+                    <div>
+                        <div class="skill_label">JQUERY  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
+                </div>
+
+                
+                <div class="skill_container">
+                    <div style="background-image: url('img/cplusplus.png')"></div>
+                    <div>
+                        <div class="skill_label">C++ <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">C++  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/vb6.png')"></div>
+                    <div>
+                        <div class="skill_label">VISUAL BASIC  <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">PHP  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/py.png')"></div>
+                    <div>
+                        <div class="skill_label">PYTHON <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
 
                 <div class="skill_container">
-                    <div class="skill_label">JAVASCRIPT  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    <div style="background-image: url('img/kotlin.png')"></div>
+                    <div>
+                        <div class="skill_label">KOTLIN <span class="lblpercent">0%</span></div>
+                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                    </div>
                 </div>
-
-                <div class="skill_container">
-                    <div class="skill_label">JQUERY  <span class="lblpercent">0%</span></div>
-                    <div class="progressbar"> <div style="width: 0%"></div> </div>
-                </div>
-
+                
             </div>
+
         </div>
 
         <div style="margin-bottom: 50px" class="waypoint" id="multidisciplinary">
@@ -297,6 +387,20 @@
                     </div>
                 </li>
 
+                
+                <li class="flex-item">
+                    <div class="thumbnail" style="background-image: url('img/thumbnail/antivirus.png')">
+                        <div class="thumb_hover" onclick="open_link('https://mavcodebreak.herokuapp.com/')">
+                            <div> Visit </div>
+                        </div>
+                    </div>
+                    <div class="label">
+                        <div class="font-large" style="font-weight: bold">Anti-virus</div>
+                        <div class="font-middle"> Platform : Android, Windows </div>
+                        <div class="font-middle"> Language : XML, JAVA, C# </div>
+                    </div>
+                </li>
+
                 <li class="flex-item">
                     <div class="thumbnail" style="background-image: url('img/thumbnail/artstation.png')">
                         <div class="thumb_hover" onclick="open_link('http://misaeljager.artstation.com')">
@@ -337,15 +441,29 @@
                 </li>
 
                 <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/antivirus.png')">
-                        <div class="thumb_hover" onclick="open_link('https://mavcodebreak.herokuapp.com/')">
+                    <div class="thumbnail" style="background-image: url('img/thumbnail/imageconverter.png')">
+                        <div class="thumb_hover" onclick="open_link('https://codebreakdev.herokuapp.com/imageconverter/')">
                             <div> Visit </div>
                         </div>
                     </div>
                     <div class="label">
-                        <div class="font-large" style="font-weight: bold">Anti-virus</div>
-                        <div class="font-middle"> Platform : Android, Windows </div>
-                        <div class="font-middle"> Language : XML, JAVA, C# </div>
+                        <div class="font-large" style="font-weight: bold">Image Converter</div>
+                        <div class="font-middle"> Platform : Windows </div>
+                        <div class="font-middle"> Language : C# </div>
+                    </div>
+                </li>
+
+
+                <li class="flex-item">
+                    <div class="thumbnail" style="background-image: url('img/thumbnail/wedding_invitation_video.png')">
+                        <div class="thumb_hover" onclick="open_link('https://www.youtube.com/watch?v=wtJ0lha-1_g')">
+                            <div> Watch </div>
+                        </div>
+                    </div>
+                    <div class="label">
+                        <div class="font-large" style="font-weight: bold">Wedding Invitation</div>
+                        <div class="font-middle"> Media : Video </div>
+                        <div class="font-middle"> Tool : Adobe Animate </div>
                     </div>
                 </li>
 
@@ -376,33 +494,6 @@
                 </li>
 
                 <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/imageconverter.png')">
-                        <div class="thumb_hover" onclick="open_link('https://codebreakdev.herokuapp.com/imageconverter/')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Image Converter</div>
-                        <div class="font-middle"> Platform : Windows </div>
-                        <div class="font-middle"> Language : C# </div>
-                    </div>
-                </li>
-
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/wedding_invitation_video.png')">
-                        <div class="thumb_hover" onclick="open_link('https://www.youtube.com/watch?v=wtJ0lha-1_g')">
-                            <div> Watch </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Wedding Invitation</div>
-                        <div class="font-middle"> Media : Video </div>
-                        <div class="font-middle"> Tool : Adobe Animate </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
                     <div class="thumbnail" style="background-image: url('img/thumbnail/plue.png')">
                         <div class="thumb_hover" onclick="open_link('https://codebreakdev.herokuapp.com/plue')">
                             <div> Visit </div>
@@ -427,8 +518,14 @@
 
 
 
-<footer class=" font-white-color font-small" style="background-color: #333;width: 100%;padding: 8px;text-align: center">
+<footer class=" font-white-color font-small" >
     Copyright &copy; 2021 Misael. All Rights Reserved.
 </footer>
+<script>
+    $(window).on('load', function () {
+      $('#loading').hide();
+    });
+
+</script>
 </body>
 </html>

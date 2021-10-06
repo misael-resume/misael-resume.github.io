@@ -1,13 +1,7 @@
 var ishamburgermenu = false;
 
 $(document).ready(function () {
-    var today = new Date();
-    var date = today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear()
-    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var dayName = days[today.getDay()];
 
-    $("#dayname").html(dayName);
-    $("#datename").html(date);
 
     var waypoints = []
     $('.waypoint').each(function(index, value) {
@@ -19,10 +13,12 @@ $(document).ready(function () {
                     skillanim()
 
                 if(!ismobile()){
-                    $(".nav li").each(function () {
+                    $("nav li").each(function () {
                         $(this).css({"background-color":"transparent"})
                     })
-                    $("#nav"+this.element.id).css({"background-color":"#1D9CE5"})
+                    $("#nav"+this.element.id).css({"background-color":"#41525e"})
+               
+                    
                 }
 
             },
@@ -58,10 +54,11 @@ $(window).scroll(function () {
         }
     }else{
         if(scroll === 0){
-            $(".nav li").each(function () {
+            $("nav li").each(function () {
                 $(this).css({"background-color":"transparent"})
             })
-            $("#navhome").css({"background-color":"#1D9CE5"})
+            $("#navabout").css({"background-color":"#41525e"})
+ 
         }
     }
 
@@ -70,14 +67,14 @@ $(window).scroll(function () {
 $(document).click(function(e) {
     if(ismobile()){
         if(e.target.id !== "navicon"){
-            $(".nav > li:not(:first-child)").hide();
+            $("nav > li:not(:first-child)").hide();
             ishamburgermenu=false;
         }
     }
 })
 
 function hamburgermenu(){
-    const el_nav = $(".nav > li:not(:first-child)");
+    const el_nav = $("nav > li:not(:first-child)");
     if(ishamburgermenu){
         el_nav.hide();
         ishamburgermenu=false;
@@ -96,9 +93,9 @@ function hamburgermenu(){
                 "left":"0",
                 "margin-top":distance,
                 "width":"100%",
-                "background-color": "#333",
-                "border": "3px solid #333",
-                "color":"#ECF0F1"
+                "background-color": "#2c3840",
+                "border": "3px solid #2c3840",
+                "color":"#f5f5f5"
             })
             i++;
         });
@@ -118,7 +115,7 @@ function arr_keyframe(num,value) {
 
 function skillanim() {
     var num=0;
-    var pbval = ["100", "60", "60","10","20","70","80","80","80","80","20","80","75","80"];
+    var pbval = ["90", "75", "85","85","5","80","80","80","10","45","5","60","5","5","5","5"];
     var el = $('div.progressbar div');
     el.each(function(){
         $(this).css({"width":"0"})
@@ -162,10 +159,6 @@ function animateValue(obj, start, end, duration) {
 
 function scrollToElement(el) {
 
-    $(".nav li").each(function () {
-        $(this).css({"background-color":"transparent"})
-    })
-    $("#nav"+el).css({"background-color":"#1D9CE5"})
 
 
     $("html, body").animate({
@@ -173,20 +166,18 @@ function scrollToElement(el) {
     }, {
         duration:500,
         complete: function () {
+  
+            $("nav li").each(function () {
+                $(this).css({"background-color":"transparent"})
+            })
 
-
-
-            switch (el) {
-                case "skill":
-
-                  //  skillanim()
-                    break;
-            }
-
+            $("#nav"+el).css({"background-color":"#41525e","position":"relative"})
+         
 
         }
     });
 }
+
 
 function ismobile(){
     return window.innerWidth < 1000;
@@ -194,4 +185,23 @@ function ismobile(){
 
 function open_link(link){
     window.open(link,"_blank");
+}
+
+function setBubble(id){
+    $("#"+id).prepend("\n" +
+        "<section class=\"sticky\">\n" +
+        "  <div class=\"bubbles\">\n" +
+        "      <div class=\"bubble\"></div>\n" +
+        "    <div class=\"bubble\"></div>\n" +
+        "    <div class=\"bubble\"></div>\n" +
+        "    <div class=\"bubble\"></div>\n" +
+        "    <div class=\"bubble\"></div>\n" +
+        "    <div class=\"bubble\"></div>\n" +
+        "    <div class=\"bubble\"></div>\n" +
+        "    <div class=\"bubble\"></div>\n" +
+        "    <div class=\"bubble\"></div>\n" +
+        "    <div class=\"bubble\"></div>\n" +
+        "    \n" +
+        "  </div>\n" +
+        "</section>");
 }
