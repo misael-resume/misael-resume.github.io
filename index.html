@@ -523,7 +523,20 @@
 </footer>
 <script>
     $(window).on('load', function () {
-      $('#loading').hide();
+
+        setTimeout(
+        function() 
+        {
+            $("#loading").fadeIn('slow',function(){
+                    $(this).animate({
+                        'top': '-='+$(window).height()
+                    },"fast",function(){
+                        $(this).remove()
+                    });
+                });
+        }, 5000);
+
+
     });
 
 </script>
