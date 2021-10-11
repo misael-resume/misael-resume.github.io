@@ -236,6 +236,7 @@ td {
 
 }
 
+#job > div:first-child,
 #about > div:first-child,
 #skill > div:first-child,
 #multidisciplinary > div:first-child,
@@ -244,7 +245,7 @@ td {
     margin-bottom: 20px
 }
 
-
+#job > div:first-child > div,
 #about > div:first-child > div,
 #skill > div:first-child > div,
 #multidisciplinary > div:first-child > div,
@@ -284,6 +285,7 @@ ul{
     list-style-type: none;
     font-weight: bold;
     font-size: 16px;
+    padding-left: 20px;
 }
 ul > li{
     font-weight: normal;
