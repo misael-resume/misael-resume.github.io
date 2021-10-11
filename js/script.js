@@ -1,7 +1,9 @@
 var ishamburgermenu = false;
 
 $(document).ready(function () {
-
+    initskillanim()
+    initmultidisciplinaryanim()
+    initportfolioanim();
 
     var waypoints = []
     $('.waypoint').each(function(index, value) {
@@ -9,8 +11,22 @@ $(document).ready(function () {
         var waypoint = new Waypoint({
             element: value,
             handler: function() {
-                if(this.element.id==="skill")
-                    skillanim()
+                switch (this.element.id) {
+                    case "skill":
+                        skillanim()
+                        break;
+                    case "multidisciplinary":
+                        multidisciplinaryanim()
+                        break;   
+                    case "portfolio":
+                        portfolioanim()
+                        break;      
+                    default:
+                        break;
+                }
+       
+                    
+                
 
                 if(!ismobile()){
                     $("nav li").each(function () {
@@ -111,15 +127,60 @@ function arr_keyframe(num,value) {
     }]);
 }
 
+function initmultidisciplinaryanim(){
+    var el = $(".multidisciplinary div");
+    el.each(function(){
+        $(this).css({
+            "opacity":"0"
+        })
+    });
+}
+
+function multidisciplinaryanim(){
+    var ele = $(".multidisciplinary div");
+    $.each(ele, function(i, el){        
+        setTimeout(function(){
+           $(el).animate({
+            'opacity':1
+           }, "fast");
+        },(i * 50));
+        
+    });
+}
+
+function initportfolioanim(){
+    var el = $("#portfolio .flex-container .flex-item");
+    el.each(function(){
+        $(this).css({
+            "opacity":"0"
+        })
+    });
+}
+
+function portfolioanim(){
+    var ele = $("#portfolio .flex-container .flex-item");
+    $.each(ele, function(i, el){        
+        setTimeout(function(){
+           $(el).animate({
+            'opacity':1
+           }, "slow");
+        },i * 500);
+        
+    });
+}
+
+function initskillanim(){
+    var el = $('div.progressbar div');
+    el.each(function(){
+        $(this).css({"width":"0"})
+    });
+}
 
 
 function skillanim() {
     var num=0;
     var pbval = ["90", "75", "85","85","5","80","80","80","10","45","5","60","5","5","5","5"];
     var el = $('div.progressbar div');
-    el.each(function(){
-        $(this).css({"width":"0"})
-    });
     el.each(function(){
         arr_keyframe(num,pbval[num])
         $(this).playKeyframe({
