@@ -236,7 +236,6 @@ td {
 
 }
 
-#job > div:first-child,
 #about > div:first-child,
 #skill > div:first-child,
 #multidisciplinary > div:first-child,
@@ -245,7 +244,6 @@ td {
     margin-bottom: 20px
 }
 
-#job > div:first-child > div,
 #about > div:first-child > div,
 #skill > div:first-child > div,
 #multidisciplinary > div:first-child > div,
