@@ -207,11 +207,8 @@ td {
     align-items: center; 
 }
 .skill_container > div:first-child{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    text-align: center;
 }
 .skill_container > div:last-child{
     padding: 8px;
