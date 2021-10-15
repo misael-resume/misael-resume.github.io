@@ -106,14 +106,16 @@ footer{
 table {
     border-collapse: collapse;
     border-spacing: 0;
-    width: 200px;
+    width: 100%;
     display: inline-block;
+    padding-top: 3px;
+
 }
 
 td {
     font-size: 12px;
     text-align: left;
-    padding: 4px;
+    padding: 5px;
 }
 
 
@@ -281,12 +283,4 @@ button:hover{  background-color: #1c95e6; }
 
 
 
-table{
-    width: 100%;
-    padding-top: 5px;
-}
-
-td{
-    padding: 10px;
-}
 
