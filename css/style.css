@@ -3,6 +3,10 @@
     src: url("../font/Roboto.ttf");
 }
 
+@font-face {
+    font-family: "dosis";
+    src: url("../font/Dosis.ttf");
+}
 
 
 .font-very-small{font-size: 10px}
@@ -232,8 +236,6 @@ td {
     background-color: #F39C12;
     height: 10px;
     border-radius: 10px;
-
-
 }
 
 #about > div:first-child,
