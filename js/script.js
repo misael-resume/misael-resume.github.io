@@ -179,7 +179,7 @@ function initskillanim(){
 
 function skillanim() {
     var num=0;
-    var pbval = ["80", "65", "70","70","5","70","75","70","75","10","45","5","60","5","5","5","5"];
+    var pbval = ["75", "75", "70","20","70","5","70","75","70","75","5","45","5","60","5","5","5","5"];
     var el = $('div.progressbar div');
     el.each(function(){
         arr_keyframe(num,pbval[num])

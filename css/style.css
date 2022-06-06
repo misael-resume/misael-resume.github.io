@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "conthrax";
+    src: url("../font/conthrax.ttf");
+}
+
+@font-face {
     font-family: "dosis";
     src: url("../font/Dosis.ttf");
 }
@@ -76,6 +81,7 @@ header{
 header > div{ position: relative; height: 100% }
 
 nav{
+    font-family: conthrax;
     text-align: center;
     list-style-type: none;
     margin: 0;
@@ -87,8 +93,7 @@ nav > li:first-child{
 }
 nav > li:not(:first-child){
     cursor: pointer;
-    border-left: 1px solid #41525e;
-    border-right: 1px solid #41525e;
+  
     text-shadow: 0 1px 0 #000;
     align-items: center;
     margin: 0 -5px -5px 0;
@@ -242,7 +247,8 @@ td {
 #multidisciplinary > div:first-child,
 #portfolio > div:first-child{
     border-bottom:5px solid #2c3840;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    font-family: conthrax;
 }
 
 #about > div:first-child > div,
