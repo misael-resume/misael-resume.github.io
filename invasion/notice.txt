@@ -1,0 +1,22 @@
+<size=80%>Version 0.5</size>
+<size=50%>
++ Added new map
++ Adjustment enemy attack speed
++ Fix issue : daily free doesn't reset
++ Fix issue : generator doesn't reset
++ Fix issue : no light in important area
++ Fix issue : NPC objective doesn't update
++ Fix issue : fall function make slow movement speed
++ Fix issue : can't jump when moving
++ Fix issue : volume door doesn't follow settings </size>
+
+<size=80%>Version 0.4</size>
+<size=50%>
++ Fix issue : menu in game over ui doesn't work
++ Fix issue : portal active even mission not complete
++ Fix issue : force close after change graphic quality </size>
+
+<size=50%>Note : We in development progress
+</size>
+
+
