@@ -2,21 +2,22 @@
 <size=50%>
 + Added new map
 + Adjustment enemy attack speed
-+ Fix issue : daily free doesn't reset
-+ Fix issue : generator doesn't reset
++ Fix issue : daily free can't be reset
++ Fix issue : generator can't be reset
 + Fix issue : no light in important area
-+ Fix issue : NPC objective doesn't update
-+ Fix issue : fall function make slow movement speed
-+ Fix issue : can't jump when moving
-+ Fix issue : volume door doesn't follow settings </size>
++ Fix issue : NPC objectives can't be updated automatically
++ Fix issue : fall function makes the movement speed slow
++ Fix issue : can't jump while moving
++ Fix issue : door audio volume doesn't follow settings
++ Fix issue : dragon breath makes the game not responding </size>
 
 <size=80%>Version 0.4</size>
 <size=50%>
-+ Fix issue : menu in game over ui doesn't work
-+ Fix issue : portal active even mission not complete
-+ Fix issue : force close after change graphic quality </size>
++ Fix issue : menu in game over ui not working
++ Fix issue : portal is active even the mission isn't finished
++ Fix issue : force close after changing graphic quality</size>
 
-<size=50%>Note : We in development progress
+<size=50%>Note : This game is currently under development
 </size>
 
 
