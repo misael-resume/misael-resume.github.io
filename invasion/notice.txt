@@ -1,5 +1,9 @@
 <size=50%>Note : This game is currently under development</size>
 
+<size=80%>Version 0.8a</size>
+<size=50%>
++ Fix issue : harvest objectives can't update automatically</size>
+
 <size=80%>Version 0.7a</size>
 <size=50%>
 + Fix issue : night vision still active when removed from equipment slot
