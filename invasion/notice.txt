@@ -1,6 +1,16 @@
 <size=50%>Note : This game is currently under development</size>
 
-<size=80%>Version 0.6a</size>
+<size=80%>Version 0.7a</size>
+<size=50%>
++ Fix issue : night vision still active when removed from equipment slot
++ Fix issue : Ads after game over making the game not responding
++ Adjustment equipment slots can display item details panel
++ Adjustment gacha probability
++ Adjustment gacha slots 
++ Added gacha using ads
++ Remove ads when game over</size>
+
+<size=80%>Version 0.6a </size>
 <size=50%>
 + Adjustment gacha probability
 + Adjustment equipment slots 
@@ -12,7 +22,7 @@
 <size=50%>
 + Added new map
 + Adjustment enemy attack speed
-+ Fix issue : daily free and generator can't be reset
++ Fix issue : daily free and generator can't reset
 + Fix issue : no light in important area
 + Fix issue : NPC objectives can't update automatically
 + Fix issue : fall function makes the movement speed slow
