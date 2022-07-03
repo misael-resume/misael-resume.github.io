@@ -201,6 +201,7 @@ td {
 .label{
     color: #f5f5f5;
     padding: 8px;
+    line-height: 1.4;
 }
 
 
@@ -285,5 +286,20 @@ button{
 button:hover{  background-color: #1c95e6; }
 
 
+.activeState,.inactiveState{
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+}
 
 
+.activeState{
+    color: #A7CF45;
+    border: 2px solid #A7CF45;
+}
+
+
+.inactiveState{
+    color: #E74C3C;
+    border: 2px solid #E74C3C;
+}
