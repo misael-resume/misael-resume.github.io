@@ -1,5 +1,16 @@
 <size=50%>Note : This game is currently under development</size>
 
+<size=80%>Version 1.0b</size>
+<size=50%>
++ Fix issue : night vision still active when removed from equipment slot
++ Fix issue : player can't back to prev map after completed all objectives
++ Added new map
++ Added new monster
++ Added new objectives
++ Rework trees
++ Adjustment lightning
++ Adjustment shop</size>
+
 <size=80%>Version 0.9a</size>
 <size=50%>
 + Fix issue : gacha using ads not working</size>
