@@ -1,5 +1,16 @@
 <size=50%>Note : This game is currently under development</size>
 
+<size=80%>Version 1.2b</size>
+<size=50%>
++ Added new invisible monster
++ Fix issue : player can't restore hp when player come back from the dead or restart app</size>
+
+<size=80%>Version 1.1b</size>
+<size=50%>
++ Rework dragon breath effect
++ Adjustment drop coin
++ Adjustment enemies stats</size>
+
 <size=80%>Version 1.0b</size>
 <size=50%>
 + Fix issue : night vision still active when removed from equipment slot
