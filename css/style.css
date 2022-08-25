@@ -124,7 +124,8 @@ td {
 }
 
 
-.content{ display: flex;margin-top: 40px; }
+
+.content{     margin-top: 40px; display: flex;}
 
 
 
@@ -249,6 +250,8 @@ td {
 #portfolio > div:first-child{
     border-bottom:5px solid #2c3840;
     margin-bottom: 20px;
+ 
+
     font-family: conthrax;
 }
 

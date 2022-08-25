@@ -42,7 +42,10 @@ $(document).ready(function () {
         });
         waypoints.push(waypoint)
     });
+
+
 })
+
 
 
 
