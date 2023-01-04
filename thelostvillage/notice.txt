@@ -1,4 +1,4 @@
-<size=80%>Version 1.0 - Alpha Test</size>
+<size=70%>V1.0 - Alpha Test</size>
 <size=50%>
 + Optimize memory usage
 + Add updater and notice
