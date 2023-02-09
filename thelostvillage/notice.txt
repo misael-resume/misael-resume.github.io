@@ -1,3 +1,10 @@
+<size=70%>V1.4 - Alpha Test</size>
+<size=50%>
++ Added new weapon
++ Added drone system
++ Small improvements
+</size>
+
 <size=70%>V1.x - Alpha Test</size>
 <size=50%>
 + Optimize memory usage
