@@ -6,7 +6,6 @@
 + Added version checker and notice
 + Small improvements
 </size>
-
-<size=30%>note : this game in alpha test phase. You will probably find a bug.</size>
+<size=30%><color=orange><b>Note : this game in alpha test phase. Maybe you will probably find a bug.</b></color></size>
 
 
