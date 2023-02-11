@@ -4,8 +4,12 @@
 + Added drone system
 + Optimize memory usage
 + Added version checker and notice
-+ Small improvements
++ Small improvements </size>
+<color=orange>
+<size=30%><b>Note : </b></size>
+<size=30%>Thank you for trying our game which is in testing phase. We will release the final version soon after completing some fixes and development. Please be patient and stay tuned for updates from us.
 </size>
-<size=30%><color=orange><b>Note : this game in alpha test phase. Maybe you will probably find a bug.</b></color></size>
+</color>
+
 
 
