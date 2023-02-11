@@ -1,14 +1,12 @@
-<size=70%>V1.4 - Alpha Test</size>
+<size=70%>V1.x (11 Feb 2023)</size>
 <size=50%>
 + Added new weapon
 + Added drone system
-+ Small improvements
-</size>
-<size=70%>V1.x - Alpha Test</size>
-<size=50%>
 + Optimize memory usage
 + Added version checker and notice
++ Small improvements
 </size>
 
+<size=30%>note : this game in alpha test phase. You will probably find a bug.</size>
 
 
