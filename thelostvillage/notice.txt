@@ -1,3 +1,12 @@
+<size=60%><b>Note : </b></size>
+<size=60%>Thank you for trying our game which is in testing phase. We will release the final version soon after completing some fixes and development. Please be patient and stay tuned for updates from us.
+</size>
+<size=70%>V1.7.5 (27 Feb 2023)</size>
+<size=60%>
++ Remove ads
++ Change database format
++ Small improvements 
+</size>
 <size=70%>V1.x (11 Feb 2023)</size>
 <size=60%>
 + Added new weapon
@@ -6,8 +15,3 @@
 + Added version checker and notice
 + Small improvements 
 </size>
-<size=60%><b>Note : </b></size>
-<size=60%>Thank you for trying our game which is in testing phase. We will release the final version soon after completing some fixes and development. Please be patient and stay tuned for updates from us.
-</size>
-
-
