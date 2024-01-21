@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta name="google-site-verification" content="TdzUA8fDLAA4ghYsmwMwF0VlxLRGbFFbvK5hlemlelw" />
     <meta property="og:title" content="Misael" />
@@ -25,7 +26,7 @@
     <script src="js/jquery.keyframes.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/script.js"></script>
-   
+
 
     <style>
         #loading {
@@ -39,7 +40,7 @@
             z-index: 99;
         }
 
-        .typewrite{
+        .typewrite {
             font-size: 25px;
             left: 50%;
             top: 50%;
@@ -49,13 +50,12 @@
             animation: fadeIn 1s ease-in forwards;
         }
 
-        
+
         @keyframes fadeIn {
             to {
                 opacity: 1;
             }
         }
-
     </style>
 
     <script>
@@ -65,562 +65,688 @@
         })
     </script>
 </head>
+
 <body>
 
-     
-<div id="loading" class="bg-dark font-white-color">
-    <div class="typewrite">
-        <div class="font-middle" style="font-family: conthrax;">W E L C O M E</div>
-        <div class="font-very-small">PLEASE WAIT...</div>
-    </div>
-</div>
 
-<header id="header">
-    <div>
-        <div class="logo">
-            Resume
-        </div>
-        <nav>
-            <li onclick="hamburgermenu()" id="navicon"></li>
-            <li onclick="scrollToElement('about')" id="navabout">ABOUT ME</li>
-            <li onclick="scrollToElement('skill')" id="navskill">SKILL</li>
-            <li onclick="scrollToElement('multidisciplinary')" id="navmultidisciplinary">MULTIDISCIPLINARY</li>
-            <li onclick="scrollToElement('portfolio')" id="navportfolio">PORTFOLIO</li>
-        </nav>
-    </div>
-</header>
-
-
-<div class="content">
-    <div style="flex: 1; background-color: #DADFE3;">
-        <div class="leftpanel" >
-
-            <div class="avatar" >
-                <div></div>
-            </div>
-
-            
-            <div class="font-large" style="margin-top: 30px">
-                <b>Misael</b>
-            </div>
-
-            <div style="margin-top: 6px">
-                <div class="tag_job bg-red font-white-color" >
-                    Software Developer
-                </div>
-                <div class="tag_job bg-purple font-white-color" >
-                    Digital Artist
-                </div>
-            </div>
-
-            <div style="margin-top: 10px">
-                <i class="fab fa-facebook-square fa-lg" onclick="open_link('http://fb.com/misaeljager')"></i>
-                <i class="fab fa-instagram-square fa-lg"></i>
-                <i class="fab fa-twitter-square fa-lg"></i>
-                
-            </div>
-
-            <table style="margin-top: 6px">
-                <tr>
-                    <td> <i class="fas fa-birthday-cake fa-lg"></i> </td>
-                    <td> March 25, 1994 </td>
-                </tr>
-                <tr>
-                    <td> <i class="fas fa-map-marker-alt fa-lg"></i></td>
-                    <td>Indonesia </td>
-                </tr>
-                <tr>
-                    <td> <i class="fas fa-envelope fa-lg"></i> </td>
-                    <td>misael_arc@yahoo.com </td>
-                </tr>
-            </table>
-
-            <div>
-                <button title="Whatsapp" style="margin-top: 10px" onclick="open_link('https://api.whatsapp.com/send?phone=6281269948582')">
-                    <i class="fab fa-whatsapp"></i> Contact me
-                </button>
-            </div>
+    <div id="loading" class="bg-dark font-white-color">
+        <div class="typewrite">
+            <div class="font-middle" style="font-family: conthrax;">W E L C O M E</div>
+            <div class="font-very-small">PLEASE WAIT...</div>
         </div>
     </div>
 
-    <div class="font-dark-color bg-white" style="flex: 4;padding: 30px">
+    <header id="header">
+        <div>
+            <div class="logo">
+                Resume
+            </div>
+            <nav>
+                <li onclick="hamburgermenu()" id="navicon"></li>
+                <li onclick="scrollToElement('about')" id="navabout">ABOUT</li>
+                <li onclick="scrollToElement('skill')" id="navskill">SKILL</li>
+                <li onclick="scrollToElement('multidisciplinary')" id="navmultidisciplinary">MULTIDISCIPLINARY</li>
+                <li onclick="scrollToElement('portfolio')" id="navportfolio">PORTFOLIO</li>
+                <li onclick="scrollToElement('experience')" id="navexperience">EXPERIENCE</li>
+                <li onclick="scrollToElement('education')" id="naveducation">EDUCATION</li>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="content">
+        <div style="flex: 1; background-color: #DADFE3;">
+            <div class="leftpanel">
+
+                <div class="avatar">
+                    <div></div>
+                </div>
+
+
+                <div class="font-large" style="margin-top: 30px">
+                    <b>Misael</b>
+                </div>
+
+                <div style="margin-top: 6px">
+                    <div class="tag_job bg-red font-white-color">
+                        Software Developer
+                    </div>
+                    <div class="tag_job bg-purple font-white-color">
+                        Digital Artist
+                    </div>
+                </div>
+
+                <div style="margin-top: 10px">
+                    <i class="fab fa-facebook-square fa-lg" onclick="open_link('http://fb.com/misaeljager')"></i>
+                    <i class="fab fa-instagram-square fa-lg"></i>
+                    <i class="fab fa-twitter-square fa-lg"></i>
+
+                </div>
+
+                <table style="margin-top: 6px">
+                    <tr>
+                        <td> <i class="fas fa-birthday-cake fa-lg"></i> </td>
+                        <td> March 25, 1994 </td>
+                    </tr>
+                    <tr>
+                        <td> <i class="fas fa-map-marker-alt fa-lg"></i></td>
+                        <td>Indonesia </td>
+                    </tr>
+                    <tr>
+                        <td> <i class="fas fa-envelope fa-lg"></i> </td>
+                        <td>misael_arc@yahoo.com </td>
+                    </tr>
+                </table>
+
+                <div>
+                    <button title="Whatsapp" style="margin-top: 10px"
+                        onclick="open_link('https://api.whatsapp.com/send?phone=6281269948582')">
+                        <i class="fab fa-whatsapp"></i> Contact me
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="font-dark-color bg-white" style="flex: 4;padding: 30px">
 
 
 
-        <div style="margin-bottom: 50px" class="waypoint" id="about">
-            <div><div>ABOUT ME</div></div>
+            <div style="margin-bottom: 50px" class="waypoint" id="about">
+                <div>
+                    <div>ABOUT ME</div>
+                </div>
 
-            <div style="margin-bottom: 20px;">
-                <p class="font-middle" style="max-width: 500px;line-height: 1.6">
-                    Hi! I'm <b>Misael</b>. I am a <i>Software Developer</i> and a <i>Digital Artist</i>.
-                    I'm very passionate and dedicated to my work with 10+ years experience, I have acquired the skills and knowledge necessary to make your project a success.
-                    I enjoy every step of the design process, from discussion and collaboration.
-                </p>
+                <div style="margin-bottom: 20px;">
+                    <p class="font-middle" style="max-width: 500px;line-height: 1.6">
+                        I’m a software developer and digital artist with more then 7 years of experience in Android and
+                        Windows apps development, and 2 years experience in graphic design. These skills allow
+                        me to create innovative and engaging solutions. With extensive experience, I’m ready to bring my
+                        technical skills and creativity to meet project challenges and achieve optimal results.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div style="margin-bottom: 50px" class="waypoint" id="skill">
+                <div>
+                    <div>SKILLS</div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="skill_container">
+                        <div><img src="img/coreldraw.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">Coreldraw <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div><img src="img/csp.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">Clip Studio Paint <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div><img src="img/3dmax.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">3D Studio Max <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div><img src="img/blender.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">Blender <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div>
+                            <i class="fab fa-unity fa-2x"></i>
+                        </div>
+                        <div>
+                            <div class="skill_label">Unity Game Engine <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div><img src="img/an.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">Adobe Animate <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div><img src="img/csharp.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">C# <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div>
+                            <i class="fab fa-android fa-2x"></i>
+                        </div>
+                        <div>
+                            <div class="skill_label">Android Studio <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div>
+                            <i class="fab fa-java fa-2x"></i>
+                        </div>
+                        <div>
+                            <div class="skill_label">Java <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div>
+                            <i class="fab fa-php fa-2x"></i>
+                        </div>
+                        <div>
+                            <div class="skill_label">PHP <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div>
+                            <i class="fab fa-laravel fa-2x"></i>
+                        </div>
+                        <div>
+                            <div class="skill_label">Laravel <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div>
+                            <i class="fab fa-js fa-2x"></i>
+                        </div>
+                        <div>
+                            <div class="skill_label">Javascript <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill_container">
+                        <div>
+                            <i class="fab fa-node fa-2x"></i>
+                        </div>
+                        <div>
+                            <div class="skill_label">Node.JS <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div><img src="img/jquery.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">Jquery <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill_container">
+                        <div><img src="img/cplusplus.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">C++ <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div><img src="img/vb6.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">Visual Basic <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div>
+                            <i class="fab fa-python fa-2x"></i>
+                        </div>
+                        <div>
+                            <div class="skill_label">Python <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_container">
+                        <div><img src="img/kotlin.png" width="30"></div>
+                        <div>
+                            <div class="skill_label">Kotlin <span class="lblpercent">0%</span></div>
+                            <div class="progressbar">
+                                <div style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="margin-bottom: 50px" class="waypoint" id="multidisciplinary">
+                <div>
+                    <div>MULTIDISCIPLINARY</div>
+                </div>
+
+                <div class="flex-container multidisciplinary">
+                    <div style="margin-bottom: 20px;">
+                        <div
+                            style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
+                            <div class="font-large"><b>3D Modeling</b></div>
+                            <div class="font-middle">
+                                Capable to making low poly model, weapon, house, vehicle, metahuman and rigging
+                                animation
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <div
+                            style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
+                            <div class="font-large"><b>Digital Art</b></div>
+                            <div class="font-middle">
+                                Capable to making character and sprite sheet
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div style="margin-bottom: 20px">
+                        <div
+                            style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
+                            <div class="font-large"><b>Web Development</b></div>
+                            <div class="font-middle">
+                                Understanding native php, javascript, mysql and responsive layout
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <div
+                            style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
+                            <div class="font-large"><b>Mobile Development</b></div>
+                            <div class="font-middle">
+                                Understanding java, xml, restful web services and admob
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div style="margin-bottom: 20px">
+                        <div
+                            style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
+                            <div class="font-large"><b>Desktop Development</b></div>
+                            <div class="font-middle">
+                                Understanding C# (winform) and mysql connector
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <div
+                            style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
+                            <div class="font-large"><b>Game Development</b></div>
+                            <div class="font-middle">
+                                Understanding Particle System, Visual Effect, Scriptable Object, In-app purchase, FPS,
+                                3PS, Isometric for 2D & 3D platform
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div style="margin-bottom: 50px" class="waypoint" id="portfolio">
+                <div>
+                    <div>PORTFOLIO</div>
+                </div>
+
+                <ul class="flex-container">
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/cleanzone.png')">
+                            <div class="thumb_hover"
+                                onclick="open_link('https://digitaldreamsinteractive.github.io/cleanzone/index.html')">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold">Cleanzone Mobile Security</div>
+                            <div class="font-middle"> Platform : Android </div>
+                            <div class="font-middle activeState"> Status : Active </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/thelostvillage.png')">
+                            <div class="thumb_hover"
+                                onclick="open_link('https://www.amazon.com/gp/product/B0C6R5WMQ4')">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold"> The Cursed Village </div>
+                            <div class="font-middle"> Platform : Android </div>
+                            <div class="font-middle activeState"> Status : Active </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/invasion.png')">
+                            <div class="thumb_hover" onclick="">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold"> Invasion </div>
+                            <div class="font-middle"> Platform : Android </div>
+                            <div class="font-middle inactiveState"> Status : Discontinued </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/cpuif.png')">
+                            <div class="thumb_hover"
+                                onclick="open_link('https://codebreakdev.github.io/cpuif/index.html')">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold"> System Information Software </div>
+                            <div class="font-middle"> Platform : Windows </div>
+                            <div class="font-middle activeState"> Status : Active </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/apocalyptic_survivor.png')">
+                            <div class="thumb_hover" onclick="">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold"> Apocalyptic Survivor </div>
+                            <div class="font-middle"> Platform : Android </div>
+                            <div class="font-middle inactiveState"> Status : Discontinued </div>
+                        </div>
+                    </li>
+
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/antivirus.png')">
+                            <div class="thumb_hover" onclick="">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold">Mav Anti-Malware</div>
+                            <div class="font-middle"> Platform : Android, Windows </div>
+                            <div class="font-middle inactiveState"> Status : Discontinued </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/artstation.png')">
+                            <div class="thumb_hover" onclick="open_link('http://misaeljager.artstation.com')">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold">Digital Art</div>
+                            <div class="font-middle"> Dimension : 2D, 3D </div>
+                            <div class="font-middle activeState"> Status : Active </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/e-learning.png')">
+                            <div class="thumb_hover">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold"> E-Learning </div>
+                            <div class="font-middle"> Platform : Web </div>
+                            <div class="font-middle inactiveState"> Status : Inactive </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/onlineshop.png')">
+                            <div class="thumb_hover">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold">Online Store </div>
+                            <div class="font-middle"> Platform : Web </div>
+                            <div class="font-middle inactiveState"> Status : Inactive </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/imageconverter.png')">
+                            <div class="thumb_hover"
+                                onclick="open_link('https://codebreakdev.github.io/imageconverter/index.html')">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold">Image Converter</div>
+                            <div class="font-middle"> Platform : Windows </div>
+                            <div class="font-middle activeState"> Status : Active </div>
+                        </div>
+                    </li>
+
+
+                    <li class="flex-item">
+                        <div class="thumbnail"
+                            style="background-image: url('img/thumbnail/wedding_invitation_video.png')">
+                            <div class="thumb_hover" onclick="open_link('https://www.youtube.com/watch?v=wtJ0lha-1_g')">
+                                <div> Watch </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold">Wedding Invitation</div>
+                            <div class="font-middle"> Media : Video </div>
+                            <div class="font-middle inactiveState"> Status : Inactive </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/mediaplayer.png')">
+                            <div class="thumb_hover">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold">Audio & Video Player</div>
+                            <div class="font-middle"> Platform : Android </div>
+                            <div class="font-middle inactiveState"> Status : Inactive </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/apk-backup.png')">
+                            <div class="thumb_hover">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold"> Apk Backup</div>
+                            <div class="font-middle"> Platform : Android </div>
+                            <div class="font-middle inactiveState"> Status : Inactive </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item">
+                        <div class="thumbnail" style="background-image: url('img/thumbnail/plue.png')">
+                            <div class="thumb_hover">
+                                <div> Visit </div>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div class="font-large" style="font-weight: bold">Social Networking </div>
+                            <div class="font-middle"> Platform : Web </div>
+                            <div class="font-middle inactiveState"> Status : Inactive </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+            <div style="margin-bottom: 50px" class="waypoint" id="experience">
+                <div>
+                    <div>EXPERIENCE</div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <p class="font-middle" style="max-width: 500px;line-height: 1.6">
+
+                        <div class="subexp">
+                            <div class="year">2023 - 2024</div>
+                            <div class="description">
+                                Working as a PT Pos Indonesia Partner in financial transaction services and goods delivery.
+                            </div>
+                        </div>
+                    
+                        <div class="subexp">
+                            <div class="year">2023 - 2024</div>
+                            <div class="description">
+                                Freelance in fastwork.id as an android developer and game developer.
+                            </div>
+                        </div>
+                    
+                        <div class="subexp">
+                            <div class="year">2021</div>
+                            <div class="description">
+                                Freelance at the Makassar Governor's Office as a Web Developer.
+                            </div>
+                        </div>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div style="margin-bottom: 50px" class="waypoint" id="education">
+                <div>
+                    <div>EDUCATION</div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <p class="font-middle" style="max-width: 500px;line-height: 1.6">
+
+                        <div class="subexp">
+                            <div class="year">2012 - 2014</div>
+                            <div class="description">
+                                STMIK Dipanegara Makassar
+                            </div>
+                            <div class="department">D3 Manajemen Informatika</div>
+                        </div>
+                    
+                        <div class="subexp">
+                            <div class="year">2009 - 2011</div>
+                            <div class="description">
+                                SMK Negeri 1 Bone-Bone
+                            </div>
+                            <div class="department">Teknik Komputer & Jaringan</div>
+                        </div>
+
+
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
-
-        <div style="margin-bottom: 50px" class="waypoint" id="skill">
-            <div><div>SKILLS</div></div>
-
-            <div class="flex-container">
-                <div class="skill_container">
-                    <div><img src="img/coreldraw.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Coreldraw <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/csp.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Clip Studio Paint  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/3dmax.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">3D Studio Max  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/blender.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Blender  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-unity fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Unity Game Engine  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/an.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Adobe Animate  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-                
-                <div class="skill_container">
-                    <div><img src="img/csharp.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">C#  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-android fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Android Studio  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-java fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Java  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-php fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">PHP  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-laravel fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Laravel  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-js fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Javascript   <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-node fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Node.JS  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/jquery.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Jquery  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                
-                <div class="skill_container">
-                    <div><img src="img/cplusplus.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">C++ <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/vb6.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Visual Basic  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-python fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Python <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/kotlin.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Kotlin <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-                
-            </div>
-
-        </div>
-
-        <div style="margin-bottom: 50px" class="waypoint" id="multidisciplinary">
-            <div><div>MULTIDISCIPLINARY</div></div>
-
-            <div class="flex-container multidisciplinary">
-                <div style="margin-bottom: 20px;">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large"><b>3D Modeling</b></div>
-                        <div class="font-middle">
-                            Capable to making low poly model, weapon, house, vehicle, metahuman and rigging animation
-                        </div>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 20px;">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Digital Art</b></div>
-                        <div class="font-middle">
-                            Capable to making character and sprite sheet
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div style="margin-bottom: 20px">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Web Development</b></div>
-                        <div class="font-middle">
-                            Understanding native php, javascript, mysql and responsive layout
-                        </div>
-                    </div>
-
-                </div>
-
-                <div style="margin-bottom: 20px;">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Mobile Development</b></div>
-                        <div class="font-middle">
-                            Understanding java, xml, restful web services and admob
-                        </div>
-                    </div>
-                </div>
-
-
-                <div style="margin-bottom: 20px">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Desktop Development</b></div>
-                        <div class="font-middle">
-                            Understanding C# (winform) and mysql connector
-                        </div>
-                    </div>
-
-                </div>
-
-                <div style="margin-bottom: 20px;">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Game Development</b></div>
-                        <div class="font-middle">
-                            Understanding Particle System, Visual Effect, Scriptable Object, In-app purchase, FPS, 3PS, Isometric for 2D & 3D platform
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
-        <div style="margin-bottom: 50px" class="waypoint" id="portfolio">
-            <div><div>PORTFOLIO</div></div>
-
-            <ul class="flex-container">
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/cleanzone.png')">
-                        <div class="thumb_hover" onclick="open_link('https://digitaldreamsinteractive.github.io/cleanzone/index.html')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Cleanzone Mobile Security</div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/thelostvillage.png')">
-                        <div class="thumb_hover" onclick="open_link('https://www.amazon.com/gp/product/B0C6R5WMQ4')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> The Cursed Village </div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/invasion.png')">
-                        <div class="thumb_hover" onclick="">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> Invasion </div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle inactiveState"> Status : Discontinued </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/cpuif.png')">
-                        <div class="thumb_hover" onclick="open_link('https://codebreakdev.github.io/cpuif/index.html')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> System Information Software </div>
-                        <div class="font-middle"> Platform : Windows </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/apocalyptic_survivor.png')">
-                        <div class="thumb_hover" onclick="">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> Apocalyptic Survivor </div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle inactiveState"> Status : Discontinued </div>
-                    </div>
-                </li>
-
-                
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/antivirus.png')">
-                        <div class="thumb_hover" onclick="">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Mav Anti-Malware</div>
-                        <div class="font-middle"> Platform : Android, Windows </div>
-                        <div class="font-middle inactiveState"> Status : Discontinued </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/artstation.png')">
-                        <div class="thumb_hover" onclick="open_link('http://misaeljager.artstation.com')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Digital Art</div>
-                        <div class="font-middle"> Dimension : 2D, 3D </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/e-learning.png')">
-                        <div class="thumb_hover">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> E-Learning </div>
-                        <div class="font-middle"> Platform : Web </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/onlineshop.png')">
-                        <div class="thumb_hover" >
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Online Store </div>
-                        <div class="font-middle"> Platform : Web </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/imageconverter.png')">
-                        <div class="thumb_hover" onclick="open_link('https://codebreakdev.github.io/imageconverter/index.html')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Image Converter</div>
-                        <div class="font-middle"> Platform : Windows </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/wedding_invitation_video.png')">
-                        <div class="thumb_hover" onclick="open_link('https://www.youtube.com/watch?v=wtJ0lha-1_g')">
-                            <div> Watch </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Wedding Invitation</div>
-                        <div class="font-middle"> Media : Video </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/mediaplayer.png')">
-                        <div class="thumb_hover">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Audio & Video Player</div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/apk-backup.png')">
-                        <div class="thumb_hover">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> Apk Backup</div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/plue.png')">
-                        <div class="thumb_hover">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Social Networking </div>
-                        <div class="font-middle"> Platform : Web </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-            </ul>
-
-
-        </div>
-
-
-
     </div>
-</div>
 
 
 
-<footer class=" font-white-color font-small" >
-    Copyright &copy; 2021 Misael. All Rights Reserved.
-</footer>
-<script>
-    $(window).on('load', function () {
+    <footer class=" font-white-color font-small">
+        Copyright &copy; 2024 Misael. All Rights Reserved.
+    </footer>
+    <script>
+        $(window).on('load', function () {
 
-        setTimeout(
-        function() 
-        {
-            $("#loading").fadeIn('slow',function(){
-                    $(this).animate({
-                        'top': '-='+$(window).height()
-                    },"slow",function(){
-                        $(this).remove()
+            setTimeout(
+                function () {
+                    $("#loading").fadeIn('slow', function () {
+                        $(this).animate({
+                            'top': '-=' + $(window).height()
+                        }, "slow", function () {
+                            $(this).remove()
+                        });
                     });
-                });
-        }, 2000);
+                }, 2000);
 
 
-    });
+        });
 
-</script>
+    </script>
 </body>
+
 </html>

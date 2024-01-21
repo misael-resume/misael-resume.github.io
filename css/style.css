@@ -243,7 +243,8 @@ td {
     height: 10px;
     border-radius: 10px;
 }
-
+#education > div:first-child,
+#experience > div:first-child,
 #about > div:first-child,
 #skill > div:first-child,
 #multidisciplinary > div:first-child,
@@ -254,7 +255,8 @@ td {
 
     font-family: conthrax;
 }
-
+#education> div:first-child > div,
+#experience> div:first-child > div,
 #about > div:first-child > div,
 #skill > div:first-child > div,
 #multidisciplinary > div:first-child > div,
@@ -305,4 +307,23 @@ button:hover{  background-color: #1c95e6; }
 .inactiveState{
     color: #E74C3C;
     border: 2px solid #E74C3C;
+}
+
+
+
+.subexp {
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc
+}
+
+.subexp > .year {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subexp > .department{
+    margin-top: 5px;
+    font-style: italic;
+    font-size: small;
 }
